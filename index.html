@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assetes/style/style.css">
+
     <title>Challenge Encriptador | ONE - Oracle Next Education</title>
+
 </head>
 <body>
-    <main class="container">
+    <main class="container ">
         <section class="criptografia">
-            <input type="text" class="criptografia__campo-de-texto">
-            <button class="criptografia__botao">criptografia</button>
-            <button class="criptografia_botao--alternativo">descriptografia</button>
+            <input type="text" class="criptografia__campo-de-texto" data-texto="texto" placeholder="Digite seu texto aqui . . .">
+            <button class="criptografia__botao" data-botao="criptografia">Criptografia</button>
+            <button class="criptografia_botao--alternativo" data-botao="descriptografia">Descriptografia</button>
+
         </section>
         <section class="resultado">
-            <div class="resultado__texto">
-                <!-- ???? -->
-                <button class="resultado_copiar">Copiar</button>
-            </div>
+            <input type="text" class="resultado__campo-de-texto" data-texto="resultado">
+            <!-- <button class="resultado_copiar" data-botao="copiar">Copiar</button> -->
+
         </section>
     </main>
     <footer>
         <p></p>
     </footer>
+
+    <script src="./assetes/js/app.js" type="module"></script>
 </body>
 </html>
