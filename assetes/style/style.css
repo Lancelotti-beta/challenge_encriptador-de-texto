@@ -1,1 +1,25 @@
 @import url(./abstract/_reset.css);
+@import url(./abstract/_variaveis.css);
+
+@import url(./components/cabecalho.css);
+@import url(./components/botao.css);
+@import url(./components/criptografia.css);
+@import url(./components/resultado.css);
+
+body {
+    background: var(--ligthBlue-100);
+    font-family: var(--fonte);
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin: 0 auto;
+}

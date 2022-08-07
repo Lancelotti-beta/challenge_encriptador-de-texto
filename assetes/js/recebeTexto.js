@@ -11,15 +11,6 @@ const ativaBotao = {
     descriptografia: button => descriptografaMensagem(button)
 }
 
-
-const listaDeChaves = {
-    a:'ai', 
-    e:'enter', 
-    i:'imes', 
-    o:'obter', 
-    u:'ufat'
-}
-
 function criptografaMensagem(elemen) {
     mostraTextoParaUsuario()
 }
@@ -30,6 +21,15 @@ function descriptografaMensagem(elemen) {
 
 const texto = document.querySelector('[data-texto="texto"]')
 const Input = document.querySelector('[data-texto="resultado"]')
+
+const listaDeChaves = {
+    a:'ai', 
+    e:'enter', 
+    i:'imes', 
+    o:'obter', 
+    u:'ufat'
+}
+
 
 function pegaTextoDoUsuario() {
     const transformaEmArray = texto.value.split('')

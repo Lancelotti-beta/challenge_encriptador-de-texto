@@ -1,0 +1,17 @@
+.criptografia {
+    width: 100vw;
+}
+
+.criptografia__campo-de-texto {
+    background: none;
+
+    color: var(--darkBlue-300);
+    font-size: 2rem;
+
+    padding: 2rem;
+
+    width: auto;
+    max-width: 327px;
+    height: auto;
+    max-height: 186px;
+}

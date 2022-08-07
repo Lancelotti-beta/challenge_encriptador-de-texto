@@ -11,16 +11,28 @@
 
 </head>
 <body>
-    <main class="container ">
+    <header class="cabecalho">
+        <img src="./assetes/img/vector_logo.svg" alt="logo do Alura">
+    </header>
+    <main class="container">
         <section class="criptografia">
-            <input type="text" class="criptografia__campo-de-texto" data-texto="texto" placeholder="Digite seu texto aqui . . .">
-            <button class="criptografia__botao" data-botao="criptografia">Criptografia</button>
-            <button class="criptografia_botao--alternativo" data-botao="descriptografia">Descriptografia</button>
+            <input typt="text" class="criptografia__campo-de-texto" 
+                data-texto="texto"
+                placeholder="Digite seu texto"
+            />
+            <div class="criptografia__botoes" >
+                <button class="botao" data-botao="criptografia">Criptografia</button>
+                <button class="botao botao--alternativo" data-botao="descriptografia">Descriptografia</button>
+
+            </div>
 
         </section>
         <section class="resultado">
-            <input type="text" class="resultado__campo-de-texto" data-texto="resultado">
-            <!-- <button class="resultado_copiar" data-botao="copiar">Copiar</button> -->
+            <input type="text" class="resultado__campo-de-texto" 
+                data-texto="resultado"
+                placeholder="Digite um texto que você deseja criptografar ou descriptografar"
+            />
+            <!-- <button class="botao" data-botao="copiar">Copiar</button> -->
 
         </section>
     </main>
