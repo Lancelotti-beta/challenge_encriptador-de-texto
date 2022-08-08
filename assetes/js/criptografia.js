@@ -38,24 +38,17 @@ function textoCriptografado() {
 
 //gaitobter
 function textoDescriptografado() {
-    const textoRecebidoDescriptgrafia = document.querySelector('[data-texto="texto"]')
+    const regExp = /(ai)|(enter)|(imes)|(obter)|(ufat)/gi
 
-    const teste = []
-    teste.push(textoRecebidoDescriptgrafia.value)
-    const descriptografandoMensagem = []
-    console.log(teste)
+    const textoRecebidoDescriptgrafia = document.querySelector('[data-texto="texto"]').value
+    const frase = textoRecebidoDescriptgrafia
 
-    teste.forEach(element => {
-        const regExp = /ai|enter|imes|obter|ufat/g
-        const newArrayString = element.replace(regExp, descriptografia[element])
-        console.log(newArrayString)
-
-        descriptografandoMensagem.push(newArrayString)
-    })
-
-
-    const descriptografado = descriptografandoMensagem.join('') //transformando em string
-    //inputResultado.value = descriptografado
+    const descriptografandoMensagem = frase.toString().replace(regExp, captura => {
+        return descriptografia[captura]
+    }) 
+    
+    const descriptografado = descriptografandoMensagem//.join('') //transformando em string
+    inputResultado.value = descriptografado
 }
 
 
