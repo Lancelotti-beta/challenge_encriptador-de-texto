@@ -1,4 +1,4 @@
-import { botaoAtivado } from "./recebeTexto.js"
+import { botaoAtivado } from "./botaoAtivo.js"
 
 const button = document.querySelectorAll('button')
 
@@ -7,5 +7,3 @@ button.forEach( botao => {
         botaoAtivado(event.target)
     })
 })
-
-
