@@ -15,3 +15,35 @@
     width: 100%;
     height: 100%;
 }
+
+.criptografia__campo-de-texto::placeholder {
+    font-weight: inherit;
+    font-size: 2rem;
+    color: var(--darkBlue-300);
+}
+
+.criptografia__aviso {
+    color: var(--gray-500-escuro);
+    font-weight: inherit;
+    font-size: .75rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+.aviso-icon {
+    background-repeat: no-repeat;
+    background-size: .75rem;
+    background-image: url(../../img/vector_aviso.svg);
+    padding: .5rem;
+}
+
+.criptografia__botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    width: auto;
+    max-width: 313px;
+    height: auto;
+    max-height: 158px;
+}

@@ -28,7 +28,7 @@
                 data-texto="texto"
                 placeholder="Digite seu texto"
             ></textarea>
-            <p>Apenas letras minúsculas e sem acento.</p>
+            <p class="criptografia__aviso aviso-icon">Apenas letras minúsculas e sem acento.</p>
             <div class="criptografia__botoes" >
                 <button class="botao" data-botao="criptografia">Criptografia</button>
                 <button class="botao botao--alternativo" data-botao="descriptografia">Descriptografia</button>
@@ -37,11 +37,11 @@
 
         </section>
         <section class="resultado">
-            <input type="text" class="resultado__campo-de-texto" 
+            <textarea class="resultado__campo-de-texto" 
                 data-texto="resultado"
                 placeholder="Digite um texto que você deseja criptografar ou descriptografar"
-            />
-            <!-- <button class="botao" data-botao="copiar">Copiar</button> -->
+            >Nenhuma mensagem encontrada</textarea>
+            <!-- <button class="botao botao--alternativo" data-botao="copiar">Copiar</button> -->
 
         </section>
     </main>

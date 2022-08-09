@@ -1,6 +1,7 @@
 :root {
+    /* ==== Cores ==== */	
+    --branco: #ffffff;
 
-/* ==== Cores ==== */	
     /* Azul escuro */
     --darkBlue-100: #609ed4;
     --darkBlue-200: #356ea9;
@@ -22,7 +23,7 @@
     --ligthBlue-400: #aab2d5;
     --ligthBlue-500: #757fb2;
 
-/* Fonte do texto e peso */
+    /* Fonte do texto e peso */
     --fonte: 'Inter', sans-serif;
 
     --fina: 100;
@@ -30,6 +31,5 @@
     --baixo: 300;
     --medio: 400;
     --alto: 500;
-
 }
 
