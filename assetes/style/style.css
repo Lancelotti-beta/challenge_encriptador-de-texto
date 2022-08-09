@@ -5,12 +5,13 @@
 @import url(./components/botao.css);
 @import url(./components/criptografia.css);
 @import url(./components/resultado.css);
+@import url(./components/rodape.css);
 
 body {
     background: var(--ligthBlue-100);
     font-family: var(--fonte);
     font-size: 1rem;
-    font-weight: var(--medio);
+    font-weight: var(--baixo);
 
     margin-left: 1rem;
     margin-right: 1rem;

@@ -1,0 +1,20 @@
+.rodape {
+    width: 100%;
+}
+
+.rodape__texto {
+    color: var(--gray-400);
+    font-size: .75rem;
+    font-weight: var(--fina);
+    text-align: center;
+}
+
+.rodape__texto--alternativo {
+    color: var(--gray-500-escuro);
+    font-size: 1rem;
+    font-weight: var(--alto);
+}
+
+.rodape__lista{
+    display: flex;
+}
