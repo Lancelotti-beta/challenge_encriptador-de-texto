@@ -1,6 +1,6 @@
 @import url(./abstract/_reset.css);
 @import url(./abstract/_variaveis.css);
-
+/* Sessões da Pagina - Import's */
 @import url(./components/cabecalho.css);
 @import url(./components/botao.css);
 @import url(./components/criptografia.css);
