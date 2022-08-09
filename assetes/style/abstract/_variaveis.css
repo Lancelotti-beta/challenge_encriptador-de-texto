@@ -23,7 +23,7 @@
     --ligthBlue-500: #757fb2;
 
 /* Fonte do texto e peso */
-    --fonte: 'Inter';
+    --fonte: 'Inter', sans-serif;
 
     --fina: 100;
     --leve: 200;

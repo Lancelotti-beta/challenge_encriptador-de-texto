@@ -5,8 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Style -->
     <link rel="stylesheet" href="./assetes/style/style.css">
 
+    <!-- icone e titulo -->
+    <link rel="shortcut icon" href="./assetes/img/vector_logo.svg" type="image/x-icon">
     <title>Challenge Encriptador | ONE - Oracle Next Education</title>
 
 </head>
@@ -16,10 +24,11 @@
     </header>
     <main class="container">
         <section class="criptografia">
-            <input typt="text" class="criptografia__campo-de-texto" 
+            <textarea class="criptografia__campo-de-texto" 
                 data-texto="texto"
                 placeholder="Digite seu texto"
-            />
+            ></textarea>
+            <p>Apenas letras minúsculas e sem acento.</p>
             <div class="criptografia__botoes" >
                 <button class="botao" data-botao="criptografia">Criptografia</button>
                 <button class="botao botao--alternativo" data-botao="descriptografia">Descriptografia</button>

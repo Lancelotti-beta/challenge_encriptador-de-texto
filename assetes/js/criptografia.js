@@ -4,7 +4,7 @@ const criptografia = {
     a: 'ai', 
     e: 'enter', 
     i: 'imes', 
-    o: 'obter', 
+    o: 'ober',
     u: 'ufat'
 }
 
@@ -12,7 +12,7 @@ const descriptografia = {
     ai: 'a', 
     enter: 'e', 
     imes: 'i', 
-    obter: 'o', 
+    ober: 'o',
     ufat: 'u'
 }
 
@@ -20,34 +20,34 @@ const descriptografia = {
 const inputResultado = document.querySelector('[data-texto="resultado"]')
 
 function textoCriptografado() {
+    const regExp = /(a)|(e)|(i)|(o)|(u)/g
+
     const textoRecebidoCriptografia = pegaTextoDoUsuario(document.querySelector('[data-texto="texto"]'))
-    const criptografandoMensagem = []
+    const frase = textoRecebidoCriptografia
 
-    textoRecebidoCriptografia.forEach(element => {
-        const regExp = /[aeiou]/g
-        const newArrayString = element.replace(regExp, criptografia[element])
-
-        criptografandoMensagem.push(newArrayString)
+    const criptografandoMensagem = frase.replace(regExp, letra => {
+        return criptografia[letra]
     })
 
 
-    const criptografado = criptografandoMensagem.join('') //transformando em string
+    const criptografado = criptografandoMensagem
     inputResultado.value = criptografado
 }
 
 
 //gaitobter
 function textoDescriptografado() {
-    const regExp = /(ai)|(enter)|(imes)|(obter)|(ufat)/gi
+    const regExp = /(ai)|(enter)|(imes)|(ober)|(ufat)/g
 
-    const textoRecebidoDescriptgrafia = document.querySelector('[data-texto="texto"]').value
-    const frase = textoRecebidoDescriptgrafia
+    const textoRecebidoDescriptgrafia = pegaTextoDoUsuario(document.querySelector('[data-texto="texto"]'))
+    const criptografia = textoRecebidoDescriptgrafia
 
-    const descriptografandoMensagem = frase.toString().replace(regExp, captura => {
-        return descriptografia[captura]
-    }) 
+    const descriptografandoMensagem = criptografia.replace(regExp, chave => {
+        //console.log(chave)
+        return descriptografia[chave]
+    })
     
-    const descriptografado = descriptografandoMensagem//.join('') //transformando em string
+    const descriptografado = descriptografandoMensagem
     inputResultado.value = descriptografado
 }
 

@@ -10,6 +10,9 @@ body {
     background: var(--ligthBlue-100);
     font-family: var(--fonte);
 
+    margin-left: auto;
+    margin-right: auto;
+
     width: 100vw;
     height: 100vh;
 }
@@ -20,6 +23,5 @@ body {
 
     align-items: center;
     justify-content: space-evenly;
-
-    margin: 0 auto;
 }
+
