@@ -25,10 +25,10 @@ function descriptografaMensagem(elemen) {
 
 function copiarTexto() {
     const textoCopiado = document.querySelector('[data-texto="resultado"]')
+    const copiado = textoCopiado.value
 
-    
-    navigator.clipboard.readText().
-        then((clipText) => console.log(clipText))
+    navigator.clipboard.writeText(copiado)
+        //.then((resposta) => { console.log(resposta) })
+        
 
-    console.log('testando botao de copiar')
 }
