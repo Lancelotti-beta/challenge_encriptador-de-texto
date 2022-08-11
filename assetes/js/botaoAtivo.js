@@ -1,4 +1,5 @@
 import { textoCriptografado, textoDescriptografado } from "./criptografia.js"
+import { pegaTextoDoUsuario } from "./recebeTexto.js"
 
 export function botaoAtivado(button) {
     const tipoDoBotao = button.dataset.botao
@@ -10,7 +11,8 @@ export function botaoAtivado(button) {
 
 const ativaBotao = {
     criptografia: button => criptografaMensagem(button),
-    descriptografia: button => descriptografaMensagem(button)
+    descriptografia: button => descriptografaMensagem(button),
+    copiar: button => copiarTexto(button)
 }
 
 function criptografaMensagem(elemen) {
@@ -18,6 +20,15 @@ function criptografaMensagem(elemen) {
 }
 
 function descriptografaMensagem(elemen) {
-    console.log('testando descriptografia')
     textoDescriptografado()
+}
+
+function copiarTexto() {
+    const textoCopiado = document.querySelector('[data-texto="resultado"]')
+
+    
+    navigator.clipboard.readText().
+        then((clipText) => console.log(clipText))
+
+    console.log('testando botao de copiar')
 }
