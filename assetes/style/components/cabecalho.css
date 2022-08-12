@@ -1,30 +1,21 @@
 .cabecalho {
-    width: auto;
-    max-width: 300px;
-    
-    height: 3vh;
-    max-height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100vw;
+    height: 10vh;
 }
 
-.cabecalho img {
-    padding: 2rem .5rem;
-}
-
-@media screen and (min-width: 720px) {
-    .cabecalho {
-        height: 5vh;
-    }
-    
+.cabelho__image-logo {
+    padding: .5rem;
+    width: 42px;
+    height: 42px;
 }
 
 @media screen and (min-width: 1240px) {
-    .cabecalho {
-        padding: 1rem .5rem;
-    }
 
-    .cabecalho img {
-        width: 120px;
-        height: 48px;
-        padding: 0;
+    .cabelho__image-logo {
+        padding: 1rem .5rem;
     }
 }

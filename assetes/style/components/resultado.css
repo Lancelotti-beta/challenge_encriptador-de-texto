@@ -17,13 +17,13 @@
 }
 
 .resultado__campo-de-texto {
+    background: none;
     font-weight: var(--alto);
-    font-size: 24px;
-    padding: 2rem .5rem;
+    font-size: 1.5rem;
     outline: none;
     text-align: center;
-    width: 90%;
-    height: 80%;
+    width: 80%;
+    height: 30vh;
 }
 
 .resultado__campo-de-texto::placeholder {
@@ -42,7 +42,7 @@
 
     .resultado__campo-de-texto {
         width: 90%;
-        height: 50%;
+        height: 80%;
     }
 }
 
@@ -51,16 +51,13 @@
     .resultado {
         width: auto;
         min-width: 30vw;
-        height: 80vh;
+        height: 90vh;
         
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 2rem;
+        margin: 0;
     }
 
     .resultado__campo-de-texto {
         margin: 0;
-        height: 100%;
     }
 
     .campo-de-texto--imagem {
