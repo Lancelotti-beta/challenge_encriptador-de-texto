@@ -14,35 +14,28 @@ body {
     font-weight: var(--baixo);
 
     width: 100vw;
-    height: 130vh;
+    height: 100vh;
 }
 
 .container {
     display: flex;
     flex-direction: column;
+
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
-    padding: 1rem 0;
-}
-
-@media screen and (min-width: 720px) {
-    body {
-        height: 115vh;
-    }
-
-    .container {
-        margin: 2rem 0;
-    }
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (min-width: 1240px) {
     .container {
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
-        padding: 0;
-        margin: 0;
+        justify-content: space-around;
+        width: 80%;
+        height: 70%;
     }
 }
 
