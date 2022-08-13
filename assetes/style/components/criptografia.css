@@ -1,7 +1,7 @@
 .criptografia {
     width: 90%;
     max-width: 343px;
-    height: 50%;
+    height: 40%;
     max-height: 624px;
 
 }
@@ -9,7 +9,7 @@
 .criptografia__campo-de-texto {
     background: none;
     color: var(--darkBlue-300);
-    font-size: 2rem;
+    font-size: 3.2rem;
     font-weight: inherit;
     outline: none;
 
@@ -24,20 +24,20 @@
 .criptografia__aviso {
     color: var(--gray-500-escuro);
     font-weight: inherit;
-    font-size: .75rem;
-    padding: 1rem;
+    font-size: 1.2rem;
+    padding: 1.6rem;
     
 }
 
 .aviso-icon {
     background: url(../../img/vector_aviso.svg) left / cover no-repeat;
-    background-size: .75rem;
+    background-size: 1.2rem;
 }
 
 .criptografia__botoes {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.6rem;
 
     width: 100%;
     height: 30%;
@@ -57,15 +57,15 @@
 
     .criptografia__botoes  {
         flex-direction: row;
-        height: 10%;
+        height: 5%;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .criptografia {
-        width: 40%;
+        width: 50%;
         min-width: 400px;
-        min-height: 744px;
+        min-height: 644px;
     }
     
     .criptografia__campo-de-texto {
@@ -74,9 +74,8 @@
     }
 
     .criptografia__botoes  {
-        height: auto;
         width: 100%;
-        min-width: 400px;
+        min-width: 390px;
     }
 
 }

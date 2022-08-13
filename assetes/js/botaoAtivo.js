@@ -15,20 +15,23 @@ const ativaBotao = {
     copiar: button => copiarTexto(button)
 }
 
-function criptografaMensagem(elemen) {
+function criptografaMensagem(element) {
     textoCriptografado()
 }
 
-function descriptografaMensagem(elemen) {
+function descriptografaMensagem(element) {
     textoDescriptografado()
 }
 
-function copiarTexto() {
+function copiarTexto(element) {
     const textoCopiado = document.querySelector('[data-texto="resultado"]')
     const copiado = textoCopiado.value
 
     navigator.clipboard.writeText(copiado)
         //.then((resposta) => { console.log(resposta) })
-        
 
+    element.classList.add('ativo')
+    setTimeout(() => element.classList.remove('ativo'), 1500)
+
+    textoCopiado.value = ''
 }

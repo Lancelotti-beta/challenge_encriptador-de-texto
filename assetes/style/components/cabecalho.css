@@ -4,18 +4,18 @@
     justify-content: flex-start;
 
 
-    margin: 2rem 0;
+    margin: 1rem 0;
     height: 10%;
 }
 
 .cabelho__image-logo {
-    padding: .5rem;
+    padding: .8rem;
     width: 42px;
     height: 42px;
 }
 
 @media screen and (min-width: 1024px) {
     .cabelho__image-logo {
-        padding: 1rem;
+        padding: 1.6rem;
     }
 }

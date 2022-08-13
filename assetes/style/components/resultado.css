@@ -11,14 +11,14 @@
 
     width: 90%;
     max-width: 343px;
-    height: 50%;
+    height: 40%;
     max-height: 595px;
 }
 
 .resultado__campo-de-texto {
     background: none;
     font-weight: var(--alto);
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     outline: none;
     text-align: center;
 
@@ -57,8 +57,8 @@
 
         width: 40%;
         min-width: 400px;
-        height: 70%;
-        min-height: 700px;
+        height: 60%;
+        min-height: 640px;
     }
 
     .resultado__campo-de-texto {
@@ -69,6 +69,6 @@
 
     .campo-de-texto--imagem {
         background: url(../../img/imagem_de_fundo-desktop.svg) center / cover no-repeat;
-        background-size: 20rem;
+        background-size: 30rem;
     }
 }

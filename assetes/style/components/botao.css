@@ -8,8 +8,8 @@
     cursor: pointer;
     font-weight: inherit;
     font-size: inherit;
-    line-height: 1.1875rem;
-    padding: 1.5rem;
+    line-height: 1.9rem;
+    padding: 2.4rem;
     width: 100%;
 }
 
@@ -32,9 +32,10 @@
     cursor: pointer;
     font-weight: inherit;
     font-size: inherit;
-    line-height: 1.1875rem;
-    margin: 1rem 0;
-    padding: 1.5rem;
+    line-height: 1.9rem;
+    margin: 1.6rem 0;
+    padding: 2.4rem;
+    position: relative;
     transition: ease-in-out 0.3s;
     width: 80%;
 }
@@ -44,9 +45,28 @@
     color: var(--branco);
 }
 
+.botao__copy::before {
+    background: var(--darkBlue-300);
+    border-radius: 12px;
+    color: var(--branco);
+
+    content: 'Texto Copiado!';
+    position: absolute;
+    top: -90%;
+
+    font-size: 1rem;
+    padding: 1.2rem;
+
+    display: none;
+}
+
+.ativo.botao__copy::before {
+    display: block;
+}
+
 @media screen and (min-width: 720px) {
     .botao {
-        padding: 2rem;
+        padding: 3.2rem;
         width: 50%;
     }
 
