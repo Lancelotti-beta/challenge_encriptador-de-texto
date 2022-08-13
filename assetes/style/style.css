@@ -7,35 +7,43 @@
 @import url(./components/resultado.css);
 @import url(./components/rodape.css);
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     background: var(--ligthBlue-100);
     font-family: var(--fonte);
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: var(--baixo);
 
-    width: 100vw;
-    height: 100vh;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 375px;
+    max-height: 1715px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
+    margin: 2rem auto;
+    height: 100vh;
+}
+
+@media screen and (min-width: 720px) {
+    body {
+        max-width: 768px;
+        max-height: 1384px;
+    }
 }
 
 @media screen and (min-width: 1240px) {
     .container {
         flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        width: 80%;
-        height: 70%;
+        width: 90%;
     }
 }
 
