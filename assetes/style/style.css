@@ -40,7 +40,13 @@ body {
     }
 }
 
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 1024px) {
+    body {
+        max-width: 1440px;
+        height: 100vh;
+        max-height: 1024px;
+    }
+
     .container {
         flex-direction: row;
         width: 90%;

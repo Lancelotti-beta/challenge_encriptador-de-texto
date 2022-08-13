@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: flex-start;
 
-    margin-bottom: 1rem;
+
+    margin: 2rem 0;
     height: 10%;
 }
 
@@ -13,7 +14,7 @@
     height: 42px;
 }
 
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 1024px) {
     .cabelho__image-logo {
         padding: 1rem;
     }

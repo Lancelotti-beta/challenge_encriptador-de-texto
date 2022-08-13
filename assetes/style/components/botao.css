@@ -56,7 +56,7 @@
     }
 }
 
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 1024px) {
     .botao--alternativo {
         background: var(--ligthBlue-300);
     }
